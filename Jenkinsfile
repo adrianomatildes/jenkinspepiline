@@ -11,6 +11,13 @@ pipeline {
     stages {
         stage('Construindo teste de instalando nodes') {
             steps {
+                sh 'apt install -y npm'
+            }
+        }
+    }
+    stages {
+        stage('Instalando o node js ') {
+            steps {
                 sh 'npm install'
             }
         }
