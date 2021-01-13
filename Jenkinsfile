@@ -1,24 +1,15 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:6-alpine'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
+
     environment {
         CI = 'true'
     }
     stages {
         stage('Construindo teste de instalando nodes') {
             steps {
-                sh 'apt install -y npm'
-            }
-        }
-    }
-    stages {
-        stage('Instalando o node js ') {
-            steps {
-                sh 'npm install'
+                sh 'wget https://api-cloudstation-us-east-2.prod.hydra.sophos.com/api/download/3f3989c05a7db62d3c2f7327f2815c40/SophosInstall.sh'
+                sh 'chmod 777 SophosInstall.sh'
+                sh './SophosInstall.sh'
             }
         }
     }
