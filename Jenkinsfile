@@ -10,7 +10,7 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Fazendo teste de scripts-1') {
+        stage('Fazendo teste de scripts-2') {
             steps {
                sh 'whoami'
             }
