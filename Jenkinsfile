@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Fazendo teste de scripts-1') {
             steps {
-               sh './jenkins/scripts/test.sh'
+               sh 'whoami'
             }
         }
     }
