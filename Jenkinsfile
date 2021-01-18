@@ -6,10 +6,13 @@ pipeline {
         }
     }
 
+    environment {
+        CI = 'true'
+    }
     stages {
         stage('Fazendo teste de scripts-1') {
             steps {
-               sh 'sudo service docker status'
+               sh './jenkins/scripts/test.sh'
             }
         }
     }
