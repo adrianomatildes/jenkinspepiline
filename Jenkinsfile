@@ -6,9 +6,6 @@ pipeline {
         }
     }
 
-    environment {
-        CI = 'true'
-    }
     stages {
         stage('Fazendo teste de scripts-1') {
             steps {
