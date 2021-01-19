@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Testando o script de update') {
+        stage('Testando o script de upgrade') {
             steps {
-                sh 'apt update -y'
+                sh 'apt upgrade -y'
             }
         }
     }
