@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Testando o script') {
+        stage('Testando o script de atualização ') {
             steps {
-                sh 'whoami'
+                sh 'apt update -y'
             }
         }
     }
