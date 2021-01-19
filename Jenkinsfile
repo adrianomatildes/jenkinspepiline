@@ -1,13 +1,10 @@
 pipeline {
     agent any
 
-    options {
-        timeout(time: 1, unit: 'HOURS') 
-    }
     stages {
-        stage('Testando o script comum') {
+        stage('Testando o script de update') {
             steps {
-                echo 'Hello World'
+                sh 'apt update -y'
             }
         }
     }
