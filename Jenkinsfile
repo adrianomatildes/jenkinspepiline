@@ -1,19 +1,13 @@
 pipeline {
-    agent {
-        docker {
-            image 'node:14.15.4'
-            args '-p 3000:3000'
-        }
-    }
+    agent any
 
-    environment {
-        CI = 'true'
+    options {
+        timeout(time: 1, unit: 'HOURS') 
     }
-
     stages {
-        stage('build') {
+        stage('Testando o script comum') {
             steps {
-                sh 'npm install -y'
+                echo 'Hello World'
             }
         }
     }
