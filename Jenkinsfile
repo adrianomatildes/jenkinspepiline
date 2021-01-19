@@ -17,7 +17,7 @@ pipeline {
         }
     }
     stages {
-        stage('Fazendo teste de scripts-4') {
+        stage('Fazendo teste de scripts-delivery') {
             steps {
                sh './jenkins/scripts/test.sh'
             }
