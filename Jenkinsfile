@@ -12,11 +12,11 @@ pipeline {
 
     
 
-    // stages {
-    //     stage('Fazendo teste de scripts-delivery') {
-    //         steps {
-    //            sh './jenkins/scripts/deliver-for-development.sh'
-    //         }
-    //     }
-    // }
+    stages {
+        stage('Fazendo teste de scripts-delivery') {
+            steps {
+               sh './jenkins/scripts/deliver-for-development.sh'
+            }
+        }
+    }
 }
