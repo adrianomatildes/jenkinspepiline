@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Testando o script de no docker') {
+        stage('Testando o script') {
             steps {
-                sh 'apt upgrade -y'
+                sh 'whoami'
             }
         }
     }
