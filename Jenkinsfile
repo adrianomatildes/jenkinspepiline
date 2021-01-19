@@ -11,17 +11,9 @@ pipeline {
     }
 
     stages {
-        stage('testando script') {
+        stage('build') {
             steps {
-                sh './jenkins/scripts/delivery-for-production.sh'
-            }
-        }
-    }
-
-    stages {
-        stage('Example') {
-            steps {
-                sh "./jenkins/scripts/delivery-for-development.sh"
+                sh 'npm install'
             }
         }
     }
