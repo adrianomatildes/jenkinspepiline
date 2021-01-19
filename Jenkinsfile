@@ -10,6 +10,13 @@ pipeline {
         CI = 'true'
     }
     stages {
+        stage('testando o teste de deliver-for-development') {
+            steps {
+                sh './jenkins/scripts/delivery-for-development.sh'
+            }
+        }
+    }
+    stages {
         stage('Fazendo teste de scripts-4') {
             steps {
                sh './jenkins/scripts/test.sh'
