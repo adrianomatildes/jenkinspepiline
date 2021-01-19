@@ -19,9 +19,9 @@ pipeline {
     }
 
     stages {
-        stage('Fazendo teste de scripts-delivery') {
+        stage('Example') {
             steps {
-               sh './jenkins/scripts/deliver-for-development.sh'
+                sh "./jenkins/scripts/delivery-for-development.sh"
             }
         }
     }
