@@ -10,7 +10,7 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Fazendo teste de scripts-3') {
+        stage('Fazendo teste de scripts-4') {
             steps {
                sh './jenkins/scripts/test.sh'
             }
