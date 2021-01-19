@@ -9,6 +9,7 @@ pipeline {
     environment {
         CI = 'true'
     }
+
     stages {
         stage('testando o teste de deliver-for-production.sh') {
             steps {
